@@ -6,7 +6,7 @@ function maximumNumberOfStringPairs(words: string[]): number {
         if(set.has(reversePair)) {
             count++
             set.delete(reversePair)
-        } else if(!set.has(word)) {
+        } else {
             set.add(word)
         }
     }
